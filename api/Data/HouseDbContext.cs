@@ -1,7 +1,9 @@
 using System.Runtime.Serialization;
 using Microsoft.EntityFrameworkCore;
 public class HouseDbContext : DbContext{
-    public DbSet<HouseEntity> Houses => Set<HouseEntity>();
+    public HouseDbContext(DbContextOptions<HouseDbContext> o):
+        base(o) {}
+     public DbSet<HouseEntity> Houses => Set<HouseEntity>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder options){
         var folder = Environment.SpecialFolder.LocalApplicationData;
