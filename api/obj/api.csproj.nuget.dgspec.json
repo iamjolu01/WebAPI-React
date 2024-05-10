@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\ODEL\\Upskilling\\WebAPI-React\\api\\api.csproj": {}
+    "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\ODEL\\Upskilling\\WebAPI-React\\api\\api.csproj": {
+    "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\ODEL\\Upskilling\\WebAPI-React\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\ODEL\\Upskilling\\WebAPI-React\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\ODEL\\Upskilling\\WebAPI-React\\api\\obj\\",
+        "projectPath": "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\PC-HULO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\PC-HULO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

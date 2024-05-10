@@ -1,17 +1,13 @@
-import { useState } from "react";
-import config from "../types/config";
+import useFetchHouses from "../hooks/HouseHooks";
 import { House } from "../types/house";
+import { currencyFormatter } from "../config";
+import ApiStatus from "../ApiStatus";
 
 const HouseList = () => {
-    const [houses, setHouses] = useState<House[]>([]);
+    const { data, status, isSuccess } = useFetchHouses();
 
-    const fetchHouses = async () => {
-        const rsp = await fetch(`${config.baseApiUrl}/houses`);
-        const houses = await rsp.json();
-        setHouses(houses);
-    }
-    fetchHouses();
-
+    if(!isSuccess)
+      return <ApiStatus status={status} />
     return (
         <div>
           <div className="row mb-2">
@@ -28,11 +24,11 @@ const HouseList = () => {
               </tr>
             </thead>
             <tbody>
-              {houses.map((h) => (
+              {data && data.map((h: House) => (
                 <tr key={h.id}>
                     <td>{h.address}</td>
                     <td>{h.country}</td>
-                    <td>{h.price}</td>
+                    <td>{currencyFormatter.format(h.price)}</td>
                 </tr>
               ))}
             </tbody>

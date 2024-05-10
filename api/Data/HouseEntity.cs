@@ -6,3 +6,4 @@ public class HouseEntity{
     public int Price { get; set;}
     public string? Photo { get; set;}
 }
+
