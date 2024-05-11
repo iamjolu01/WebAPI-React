@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Mvc;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -35,6 +35,25 @@ app.MapGet("/houses/{houseId:int}", async (int houseId, IHouseRepository repo) =
         return Results.NotFound($"House with ID {houseId} not found.");
     return Results.Ok(house);
 }).ProducesProblem(404).Produces<HouseDetailDto>(StatusCodes.Status200OK);
+
+app.MapPost("/houses", async ([FromBody]HouseDetailDto dto, IHouseRepository repo) =>{
+    var newHouse = repo.Add(dto);
+    return Results.Created($"/houses/{newHouse.Id}", newHouse);
+}).Produces<HouseDetailDto>(StatusCodes.Status201Created);
+
+app.MapPut("/houses", async ([FromBody]HouseDetailDto dto, IHouseRepository repo) =>{
+    if(await repo.Get(dto.Id) == null)
+        return Results.Problem($"House with ID {dto.Id} not found.", statusCode: 404);
+    var updateHouse = await repo.Update(dto);
+    return Results.Ok(updateHouse);
+}).ProducesProblem(404).Produces<HouseDetailDto>(StatusCodes.Status200OK);
+
+app.MapDelete("/houses/{houseId:int}", async (int houseId, IHouseRepository repo) =>{
+    if(await repo.Get(houseId) == null)
+        return Results.Problem($"House with ID {houseId} not found.", statusCode: 404);
+    repo.Delete(houseId);
+    return Results.Ok();
+}).ProducesProblem(404).Produces(StatusCodes.Status200OK);
 
 app.Run();
 
