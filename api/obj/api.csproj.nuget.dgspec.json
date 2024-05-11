@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj": {}
+    "F:\\Web Systems\\WebAPI-React\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj": {
+    "F:\\Web Systems\\WebAPI-React\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj",
+        "projectUniqueName": "F:\\Web Systems\\WebAPI-React\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\PC-HULO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\WebAPI-React\\api\\obj\\",
+        "projectPath": "F:\\Web Systems\\WebAPI-React\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\HULZ\\.nuget\\packages\\",
+        "outputPath": "F:\\Web Systems\\WebAPI-React\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC-HULO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\HULZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,6 +73,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.2, 8.0.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.2, 8.0.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.2, 8.0.2]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.2, 8.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -83,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

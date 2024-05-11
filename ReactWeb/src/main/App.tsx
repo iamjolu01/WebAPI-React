@@ -11,7 +11,7 @@ function App() {
       <Header subtitle='Providing house all over the world!' />
       <Routes>
         <Route path="/" element={<HouseList />}></Route>
-        <Route path='/house/:id' element={<HouseDetail />}></Route>
+        <Route path='/houses/:id' element={<HouseDetail />}></Route>
       </Routes>
     </div>
     </BrowserRouter>
