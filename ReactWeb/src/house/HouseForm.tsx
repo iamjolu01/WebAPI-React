@@ -8,6 +8,13 @@ type Args = {
 
 const HouseForm = ({ house, submitted }: Args) => {
     const [houseState, setHouseState] = useState({ ...house });
+
+    const onSubmit: React.MouseEventHandler<HTMLButtonElement> =
+      async (e) => {
+        e.preventDefault();
+        submitted(houseState);
+      }
+
     return (
         <form className="mt-2">
       <div className="form-group">
@@ -60,10 +67,12 @@ const HouseForm = ({ house, submitted }: Args) => {
       <button
         className="btn btn-primary mt-2"
         disabled={!houseState.address || !houseState.country}
-        onClick={onSubmit}
+        onClick={onSubmit }
       >
         Submit
       </button>
     </form>
     );
 };
+
+export default HouseForm;
