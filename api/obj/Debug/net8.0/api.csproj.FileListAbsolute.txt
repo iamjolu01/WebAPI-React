@@ -772,3 +772,4 @@ C:\Users\PC-HULO\Desktop\Learning Modules\Pluralsights\WebAPI-React\api\obj\Debu
 C:\Users\PC-HULO\Desktop\Learning Modules\Pluralsights\WebAPI-React\api\obj\Debug\net8.0\api.pdb
 C:\Users\PC-HULO\Desktop\Learning Modules\Pluralsights\WebAPI-React\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\Users\PC-HULO\Desktop\Learning Modules\Pluralsights\WebAPI-React\api\obj\Debug\net8.0\ref\api.dll
+C:\Users\PC-HULO\Desktop\Learning Modules\Pluralsights\WebAPI-React\api\bin\Debug\net8.0\MiniValidation.dll

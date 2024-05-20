@@ -11,6 +11,7 @@ builder.Services.AddCors();
 builder.Services.AddDbContext<HouseDbContext>(o => 
     o.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 builder.Services.AddScoped<IHouseRepository, HouseRepository>();
+builder.Services.AddScoped<IBidRepository, BidRepository>();
 
 var app = builder.Build();
 
