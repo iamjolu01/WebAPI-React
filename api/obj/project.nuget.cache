@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O+6czEBqnCPih6ao8EfKJWWi2mi98PHu0viXJ7i6ZdyMc7jFD6NWFmQUOa2wAs6Gn2RmMYOMjawsUiz/lrn6AQ==",
+  "dgSpecHash": "PtDYctcsynYd6yRgmSGIfC/O6NU3FJPVV/oN09ZHpSyK1qsNzLqCJOkI3IMpecIwMI0fiJ3iUvMqqpiWA0gkOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC-HULO\\Desktop\\Learning Modules\\Pluralsights\\WebAPI-React\\api\\api.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\PC-HULO\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\PC-HULO\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\PC-HULO\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\PC-HULO\\.nuget\\packages\\minivalidation\\0.9.1\\minivalidation.0.9.1.nupkg.sha512",
     "C:\\Users\\PC-HULO\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\PC-HULO\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\PC-HULO\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
