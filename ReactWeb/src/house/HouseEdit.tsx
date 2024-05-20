@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useFetchHouse, useUpdateHouse } from "../hooks/HouseHooks";
 import HouseForm from "./HouseForm";
 import ApiStatus from "../ApiStatus";
+import ValidationSummary from "../ValidationSummary";
 
 const HouseEdit = () => {
   const { id } = useParams();
@@ -15,6 +16,9 @@ const HouseEdit = () => {
 
   return (
     <>
+      {updateHouseMutation.isError && (
+        <ValidationSummary error={updateHouseMutation.error} />
+      )}
       <HouseForm
         house={data}
         submitted={(house) => {

@@ -3,6 +3,7 @@ import config from "../types/config";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { useNavigate } from "react-router-dom";
+import Problem from "../types/problem";
 
 const useFetchHouses = () => {
     return useQuery<House[], AxiosError>({
@@ -21,27 +22,27 @@ const useFetchHouse = (id: number) => {
 };
 
 const useAddHouse = () => {
-    const queryClient = useQueryClient();
-    const nav = useNavigate();
-    return useMutation<AxiosResponse, AxiosError, House>({
-      mutationFn: (h) => axios.post(`${config.baseApiUrl}/houses`, h),
-      onSuccess: () => {
-        queryClient.invalidateQueries({ queryKey: ["houses"] });
-        nav("/");
-      },
-    });
+  const queryClient = useQueryClient();
+  const nav = useNavigate();
+  return useMutation<AxiosResponse, AxiosError<Problem>, House>({
+    mutationFn: (h) => axios.post(`${config.baseApiUrl}/houses`, h),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["houses"] });
+      nav("/");
+    },
+  });
 };
 
 const useUpdateHouse = () => {
-    const queryClient = useQueryClient();
-    const nav = useNavigate();
-    return useMutation<AxiosResponse, AxiosError, House>({
-      mutationFn: (h) => axios.put(`${config.baseApiUrl}/houses`, h),
-      onSuccess: (_, house) => {
-        queryClient.invalidateQueries({ queryKey: ["houses"] });
-        nav(`/house/${house.id}`);
-      },
-    });
+  const queryClient = useQueryClient();
+  const nav = useNavigate();
+  return useMutation<AxiosResponse, AxiosError<Problem>, House>({
+    mutationFn: (h) => axios.put(`${config.baseApiUrl}/houses`, h),
+    onSuccess: (_, house) => {
+      queryClient.invalidateQueries({ queryKey: ["houses"] });
+      nav(`/house/${house.id}`);
+    },
+  });
 };
 
 const useDeleteHouse = () => {
